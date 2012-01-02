@@ -4,7 +4,7 @@ Donate link: http://danilopaissan.net/blog/
 Tags: cache, session
 Requires at least: 2.5
 Tested up to: 3.3
-Stable tag: 0.3.1
+Stable tag: 0.3.2
 
 D(ifferent)P(lace) Simple Cache is a WordPress plugin to implement a simple cache of objects at session level.
 
@@ -78,4 +78,6 @@ No FAQ at this time.
 = 0.3 =
 * Fixed some minor errors
 = 0.3.1 =
+* Fixed some minor errors
+= 0.3.2 =
 * Fixed some minor errors
