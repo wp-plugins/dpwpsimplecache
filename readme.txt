@@ -4,7 +4,7 @@ Donate link: http://danilopaissan.net/blog/
 Tags: cache, session
 Requires at least: 2.5
 Tested up to: 3.3
-Stable tag: 0.3.2
+Stable tag: 0.4
 
 D(ifferent)P(lace) Simple Cache is a WordPress plugin to implement a simple cache of objects at session level.
 
@@ -55,10 +55,20 @@ Delete an object in the current user's $_SESSION:
 
 	`$dpcache->delete($key);`
 	
+Delete single session by ID:
+
+	`$dpcache->invalidate_single_session($sessid);`
+	
+Prints the number of active sessions:
+
+	`<?php echo dpscache_active_users(); ?>`
+	
 At any time, through the administrative page, you can:
 
 * see all objects in the current user cache
 * delete all objects in the current user cache
+* force the deletion of all sessions
+* force the deletion of a single session
 
 You can find the latest release on [GitHub](https://github.com/danpai/dpwpsimplecache)
 
@@ -81,3 +91,5 @@ No FAQ at this time.
 * Fixed some minor errors
 = 0.3.2 =
 * Fixed some minor errors
+= 0.4 =
+* Single session level management
